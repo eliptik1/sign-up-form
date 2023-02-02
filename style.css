@@ -18,22 +18,27 @@
 
 .form-section {
     width: 60vw;
-    height: 100vh;
     background-color: rgb(187, 192, 208);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header-section {
+    font-size: 1.4rem;
     width: 100%;
-    height: 30vh; 
+    padding: 2rem 2vw;
     background-color: rgb(216, 238, 253);
 }
 .input-section {
+    font-size: 1.4rem;
     width: 100%;
-    height: 30vh;
+    padding: 2rem 2vw;
     background-color: rgb(156, 179, 252);
 }
 .submit-section {
+    font-size: 1.4rem;
     width: 100%;
-    height: 40vh;
+    padding: 2rem 2vw;
     background-color: rgb(171, 143, 255);
 }
