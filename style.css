@@ -11,32 +11,29 @@
 .side-hero {
     width: 40vw;
     height: 100vh;
-    border: 1px red solid;
-    background-color: rgb(235, 235, 235);
+    background-image: url(images/pexels-francesco-ungaro-3828753.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 
 .form-section {
     width: 60vw;
     height: 100vh;
-    border: 1px red solid;
     background-color: rgb(187, 192, 208);
 }
 
 .header-section {
     width: 100%;
-    height: 30vh;
-    border: 1px red solid;
+    height: 30vh; 
     background-color: rgb(216, 238, 253);
 }
 .input-section {
     width: 100%;
     height: 30vh;
-    border: 1px red solid;
     background-color: rgb(156, 179, 252);
 }
 .submit-section {
     width: 100%;
     height: 40vh;
-    border: 1px red solid;
     background-color: rgb(171, 143, 255);
 }
