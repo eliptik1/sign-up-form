@@ -36,6 +36,9 @@
     padding: 2rem 2vw;
     background-color: rgb(156, 179, 252);
 }
+label {
+    font-size: 1rem;
+}
 .submit-section {
     font-size: 1.4rem;
     width: 100%;
