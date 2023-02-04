@@ -82,7 +82,7 @@ p {
 .form-row label {
     user-select: none;
     position: absolute;
-    padding-left: 0.5rem;  
+    padding-left: 0.5rem;
     font-size: 1rem;
     display: flex;
     width: 100%;
@@ -104,7 +104,21 @@ p {
     outline: 2px rgb(255, 100, 43) solid;
 }
 
-.form-row input:invalid:focus{
+.form-row input:invalid:focus {
+    outline: 2px rgb(174, 206, 255) solid;
+}
+
+.form-row input:optional:focus {
+    outline: 2px rgb(174, 206, 255) solid;
+}
+
+.form-row input:optional:not(:placeholder-shown):valid:focus {
+    outline: 2px rgb(172, 255, 47) solid;
+    background-color: rgba(153, 255, 0, 0.343);
+}
+
+.form-row input:invalid:focus:not(:placeholder-shown) {
+    outline: 2px rgb(255, 100, 43) solid;
     background-color: rgba(255, 100, 83, 0.559);
 }
 
@@ -117,8 +131,13 @@ p {
 .form-row input:valid {
     outline: 2px rgb(172, 255, 47) solid;
 }
+
 .form-row input:focus:valid {
     background-color: rgba(153, 255, 0, 0.343);
+}
+
+.form-row input:focus:optional {
+    background-color: #245a83;
 }
 
 .form-row input:placeholder-shown {
