@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,18 +29,18 @@
             </div>
             <div class="input-section">
                 <p>Let's do this!</p>
-                <form id="my-form" action="" method="get">
+                <form id="my-form" action="" method="get" autocomplete="off">
                     <div class="form-row">
                         <input id="first-name" name="first-name" type="text" placeholder=" " required>
-                        <label for="first-name">FIRST NAME</label>
+                        <label for="first-name">FIRST NAME*</label>
                     </div>
                     <div class="form-row">
                         <input id="last-name" name="last-name" type="text" placeholder=" " required>
-                        <label for="last-name">LAST NAME</label>
+                        <label for="last-name">LAST NAME*</label>
                         </div>
                     <div class="form-row">
                         <input id="email" name="email" type="email" placeholder=" " required>
-                        <label for="email">EMAIL</label>
+                        <label for="email">EMAIL*</label>
                     </div>
                     <div class="form-row">
                         <input id="tel" name="tel" type="tel" placeholder=" " pattern="[0-9]{4,12}">
@@ -47,11 +48,11 @@
                     </div>
                     <div class="form-row">
                         <input id="password" name="password" type="password" placeholder=" " required>
-                        <label for="password">PASSWORD</label>
+                        <label for="password">PASSWORD*</label>
                     </div>
                     <div class="form-row">
                         <input id="confirm" type="password" placeholder=" " required>
-                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <label for="confirm">CONFIRM PASSWORD*</label>
                     </div>
                 </form>
             </div>
