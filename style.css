@@ -5,11 +5,16 @@
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(0, 32, 60);
+}
+
 .main {
     display: flex;
 }
 
 .side-hero {
+    position: relative;
     width: 40vw;
     height: 100vh;
     background-image: url(images/pexels-francesco-ungaro-3828753.jpg);
@@ -29,14 +34,13 @@
 .header-section {
     font-size: 1.4rem;
     width: 100%;
-    padding: 2rem 3vw;
-
+    padding: 0 3vw;
 }
 
 .input-section {
     font-size: 1.4rem;
     width: 100%;
-    padding: 1rem 3vw 3rem 3vw;
+    padding: 1rem 1vw 3rem 3vw;
     background-color: rgb(0, 45, 85);
     display: flex;
     flex-direction: column;
@@ -44,6 +48,14 @@
 
 p {
     margin: 1rem 0;
+}
+
+.side-hero-p {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .input-section>p {
@@ -62,7 +74,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-right: 1.5rem;
     margin-bottom: 1rem;
 }
 
@@ -191,10 +202,36 @@ button:active {
     height: 150px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(4px);
-
 }
 
 .logo img {
     width: 100px;
     height: 100px;
+}
+
+@media screen and (max-width: 930px) {
+    .main {
+        flex-direction: column;
+    }
+    .side-hero {
+        width: 100vw;
+        height: 20rem;
+    }
+    .form-section {
+        width: 100vw;
+    }
+    .logo {
+        top: 0;
+    }
+    .input-section {
+        padding: 1rem 1vw 3rem 1vw;
+        align-items: center;
+    }
+    #my-form {
+        justify-content: center;
+    }
+    .submit-section {
+        display: flex;
+        justify-content: center;
+    }
 }
