@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -32,13 +33,15 @@
                 <p>Let's do this!</p>
                 <form id="my-form" action="" method="get" autocomplete="off">
                     <div class="form-row">
-                        <input id="first-name" name="first-name" type="text" placeholder=" " pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
+                        <input id="first-name" name="first-name" type="text" placeholder=" "
+                            pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
                         <label for="first-name">FIRST NAME*</label>
                     </div>
                     <div class="form-row">
-                        <input id="last-name" name="last-name" type="text" placeholder=" " pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
+                        <input id="last-name" name="last-name" type="text" placeholder=" "
+                            pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
                         <label for="last-name">LAST NAME*</label>
-                        </div>
+                    </div>
                     <div class="form-row">
                         <input id="email" name="email" type="email" placeholder=" " required>
                         <label for="email">EMAIL*</label>
@@ -59,10 +62,14 @@
             </div>
             <div class="submit-section">
                 <button form="my-form" type="submit">Create Account</button>
-                <p class="p-login">Already have an account? <a href="#">Log in</a></p> 
+                <p class="p-login">Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <p> Copyright © 2023 eliptik1 <a href="https://github.com/eliptik1"><i class="fa fa-github"
+                    style="font-size:26px; color: rgb(184, 189, 255)"></i></a></p>
+    </footer>
 </body>
 
 </html>
