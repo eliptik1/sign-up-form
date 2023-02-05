@@ -33,6 +33,7 @@ body {
 
 .header-section {
     font-size: 1.4rem;
+    font-weight: bold;
     width: 100%;
     padding: 0 3vw;
 }
@@ -209,29 +210,45 @@ button:active {
     height: 100px;
 }
 
+.submit-section p {
+    font-size: 1.2rem;
+}
+.p-login a {
+    text-decoration: none;
+    color: rgb(61, 145, 255);
+}
+
 @media screen and (max-width: 930px) {
     .main {
         flex-direction: column;
     }
+
     .side-hero {
-        width: 100vw;
         height: 20rem;
+        width: 100%;
     }
+
     .form-section {
-        width: 100vw;
+        width: 100%;
     }
+
     .logo {
         top: 0;
     }
+
     .input-section {
-        padding: 1rem 1vw 3rem 1vw;
+        padding: 0 1vw 0 1vw;
         align-items: center;
     }
+
     #my-form {
         justify-content: center;
     }
+
     .submit-section {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
     }
 }

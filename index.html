@@ -32,11 +32,11 @@
                 <p>Let's do this!</p>
                 <form id="my-form" action="" method="get" autocomplete="off">
                     <div class="form-row">
-                        <input id="first-name" name="first-name" type="text" placeholder=" " required>
+                        <input id="first-name" name="first-name" type="text" placeholder=" " pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
                         <label for="first-name">FIRST NAME*</label>
                     </div>
                     <div class="form-row">
-                        <input id="last-name" name="last-name" type="text" placeholder=" " required>
+                        <input id="last-name" name="last-name" type="text" placeholder=" " pattern="[a-zA-Z]+((\s[a-zA-Z]+)*)" required>
                         <label for="last-name">LAST NAME*</label>
                         </div>
                     <div class="form-row">
@@ -48,7 +48,7 @@
                         <label for="tel">PHONE NUMBER</label>
                     </div>
                     <div class="form-row">
-                        <input id="password" name="password" type="password" placeholder=" " required>
+                        <input id="password" name="password" type="password" placeholder=" " minlength="3" required>
                         <label for="password">PASSWORD*</label>
                     </div>
                     <div class="form-row">
@@ -59,6 +59,7 @@
             </div>
             <div class="submit-section">
                 <button form="my-form" type="submit">Create Account</button>
+                <p class="p-login">Already have an account? <a href="#">Log in</a></p> 
             </div>
         </div>
     </div>
